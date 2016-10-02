@@ -1,0 +1,107 @@
+header.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+ul.nav {
+  display:flex;
+}
+
+a.nav-link {
+  margin-right: 20px;
+  margin-top: 10px;
+  color: rgba(255,255,255,.5);
+}
+
+section.feature-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f3f3f4;
+}
+
+section.feature-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section.hero {
+  text-align: center;
+}
+
+nav.navbar {
+  flex: 1;
+}
+
+header.header {
+  display: flex;
+  flex: 2;
+  flex: 1 1 0%;
+}
+
+.card-primary {
+  width: 100%;
+  margin: 10px;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.card-secondary {
+  color: rgba(0,0,0,.75);
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.19);
+  flex: 1 1 0%;
+  text-align: center;
+}
+@media screen and (max-width: 549px) {
+  .card-primary {
+    width: calc(100% - 20px);
+    text-align: center;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  img.logo {
+    width: 24px;
+  }
+  img.logo:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  section.feature-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .card-1 {
+    order: 1;
+  }
+  .card-2 {
+    order: 2;
+  }
+  .card-3 {
+    order: 3;
+  }
+}

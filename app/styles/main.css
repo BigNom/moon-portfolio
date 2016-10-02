@@ -1,0 +1,165 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header,
+nav,
+footer,
+section,
+article,
+div {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+embed,
+object,
+video {
+  width: 100%;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,1);
+  color: rgba(0,0,0,.75);
+}
+
+.navbar {
+  flex: 1;
+}
+
+.nav {
+  display:flex;
+}
+
+.nav-link {
+  margin-right: 20px;
+  margin-top: 10px;
+  color: rgba(255,255,255,.5);
+}
+
+.logo {
+  width: 50px;
+}
+
+@media screen and (max-width: 549px) {
+  .card-primary {
+    width: calc(100% - 20px);
+    text-align: center;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .logo {
+    width: 24px;
+  }
+  .logo:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f3f3f4;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+.feature-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+section.feature-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-primary {
+  max-width: 400px;
+  margin: 10px;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.card-secondary {
+  color: rgba(0,0,0,.75);
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19), 0 6px 20px 0 rgba(0,0,0,0.19);
+  flex: 1 1 0%;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  section.feature-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .card-1 {
+    order: 1;
+  }
+  .card-2 {
+    order: 2;
+  }
+  .card-3 {
+    order: 3;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color:#27292b;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  color: rgba(255,255,255,.5);
+}
